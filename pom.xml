@@ -29,6 +29,7 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
+      <!--  This is going to integrate Spring MVC and auto configure  -->
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
