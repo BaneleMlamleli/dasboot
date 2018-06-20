@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
-    //This code will run spring boot
+    //The forward slash will identify which mapping it will take
     @RequestMapping("/")
     public String home(){
         return "Hello there Banele";
