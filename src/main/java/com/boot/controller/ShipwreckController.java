@@ -14,7 +14,7 @@ public class ShipwreckController {
         return ShipwreckStub.list();
     }
 
-    @RequestMapping(value = "shipwrecks", method = RequestMethod.POST)
+    @RequestMapping(value = "shipwrecks", method = RequestMethod.GET)
     public Shipwreck create(@RequestBody Shipwreck shipwreck){
         return ShipwreckStub.create(shipwreck);
     }
@@ -24,12 +24,12 @@ public class ShipwreckController {
         return ShipwreckStub.get(id);
     }
 
-    @RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.GET)
     public Shipwreck update(@PathVariable long id, @RequestBody Shipwreck shipwreck){
         return ShipwreckStub.update(id, shipwreck);
     }
 
-    @RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "shipwrecks/{id}", method = RequestMethod.GET)
     public Shipwreck delete(@PathVariable long id){
         return ShipwreckStub.delete(id);
     }
